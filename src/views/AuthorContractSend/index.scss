@@ -1,0 +1,344 @@
+.author-contract-send_container {
+  width: 480px;
+  height: 590px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  padding: 32px;
+
+  .tip {
+    color: #f84263;
+    margin-bottom: 4px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .amount-wrap {
+    display: inline-block;
+    width: 248px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #fbfbfb;
+    font-size: 12px;
+    margin-left: 16px;
+    padding: 0 15px;
+    color: #c0c4cc;
+    border-radius: 4px;
+    border: 1px solid #e4e7ed;
+  }
+
+  .fw-sidebar-container .data {
+    width: auto !important;
+  }
+
+  .miner-fee__container {
+    border-top: 1px solid #ededed;
+    .title {
+      margin: 24px 0 8px;
+      display: flex;
+      justify-content: space-between;
+      color: #646464;
+      span {
+        color: #0076ff;
+        font-size: 12px;
+        float: left;
+      }
+
+      .el-switch {
+        align-items: center;
+        &.is-checked .el-switch__core::after {
+          margin-left: -9px;
+        }
+        .el-switch__label {
+          height: 12px;
+          margin-right: 8px;
+        }
+        .el-switch__core {
+          height: 12px;
+          &::after {
+            height: 8px;
+            width: 8px;
+          }
+        }
+      }
+    }
+    .advice {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0 0;
+      .number {
+        width: 128px;
+        height: 44px;
+        border: 1px solid #d3d3d3;
+        border-radius: 4px;
+        padding: 6px 0;
+        cursor: pointer;
+        transition: all 100ms;
+        p {
+          padding: 2px 0;
+          font-size: 12px;
+          text-align: center;
+          &.amount {
+            color: #000;
+            font-weight: 600;
+          }
+        }
+        &:hover p {
+          color: #409eff;
+        }
+      }
+
+      .choose {
+        background: #0076ff !important;
+        border-color: #0076ff !important;
+        position: relative;
+        p {
+          color: #fff !important;
+        }
+        &::after {
+          position: absolute;
+          top: -8px;
+          left: 50%;
+          transform: translateX(-50%);
+          box-sizing: border-box;
+          content: "";
+          display: block;
+          border: 4px solid;
+          border-color: transparent transparent #0076ff transparent;
+        }
+      }
+    }
+    .warn-info {
+      color: #f84263;
+      font-size: 12px;
+      line-height: 1;
+      margin: 6px 0;
+    }
+    .gas {
+      display: flex;
+      .wrapper {
+        width: 204px;
+        p {
+          margin: 8px 0;
+        }
+        input {
+          height: 36px;
+        }
+      }
+      .final {
+        padding: 37px 0 0 20px;
+      }
+      .wrapper + .wrapper {
+        margin-left: 8px;
+      }
+    }
+    .el-row {
+      border: 1px solid #d3d3d3;
+      border-radius: 4px;
+      overflow: hidden;
+      input {
+        border: none;
+        border-radius: 0;
+        height: 36px;
+      }
+    }
+    .conversion {
+      padding: 12px 0 0 20px;
+    }
+    .conversion,
+    .final {
+      color: #646464;
+      position: relative;
+      &::before {
+        content: "≈";
+        position: absolute;
+        display: block;
+        left: 8px;
+        bottom: 14px;
+      }
+    }
+    .unit {
+      border-left: 1px solid #d3d3d3;
+    }
+  }
+
+  .title-font {
+    font-size: 12px;
+    color: #646464;
+    font-weight: 400;
+  }
+  .contract-send__wrapper {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ededed;
+  }
+  .contract-send__container {
+    > .contract-send__title {
+      color: #282828;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  .confirm-tip {
+    font-size: 12px;
+    color: #282828;
+    margin-top: 12px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .amount__wrapper {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ededed;
+    .fw-coin-select {
+      margin-top: 16px;
+      .fw-input {
+        padding-left: 16px;
+      }
+      button {
+        min-width: 120px;
+        cursor: default !important;
+        img {
+          display: none;
+        }
+      }
+      .coin-name {
+        max-width: 108px;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        margin: 0;
+      }
+    }
+    .amount-usd {
+      .num-money {
+        font-size: 12px;
+        color: #9d9d9d;
+      }
+    }
+    .num-of-symbol {
+      text-align: right;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 12px;
+      color: #0076ff;
+      > span {
+        color: #646464;
+      }
+    }
+  }
+  .divisibl-container {
+    .title-font {
+      font-size: 16px;
+      color: #282828;
+    }
+    .fw-coin-select {
+      margin-top: 6px !important;
+      button {
+        background: #fff !important;
+        padding: 0 !important;
+      }
+      .divisibl-amount {
+        color: #0076ff;
+        font-size: 16px;
+        float: right;
+        font-weight: 450;
+      }
+    }
+  }
+  .send-from__container {
+    margin-top: 24px;
+    .wallet-name {
+      font-size: 12px;
+      color: #282828;
+      font-weight: 500;
+      max-width: 250px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .send-from-address {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #9d9d9d;
+    text-align: right;
+  }
+  .send-to__container {
+    margin-top: 24px;
+    .send-to-address {
+      color: #282828;
+      font-size: 12px;
+    }
+  }
+  .send-data__container {
+    margin-top: 24px;
+    .send-data {
+      width: 265px;
+      color: #282828;
+      font-size: 12px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .miner-fee__container {
+    margin-top: 24px;
+    > .free-num {
+      text-align: right;
+    }
+  }
+  .footer__btns {
+    margin-top: 24px;
+    .footer__btn {
+      width: 200px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 4px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .footer-cancel__btn {
+      color: #646464;
+      border: 1px solid #d8d8d8;
+    }
+    .footer-confirm__btn {
+      color: #fff;
+      background-color: #02ba3d;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .location {
+    position: relative;
+    padding-right: 16px;
+    height: 14px;
+    img {
+      position: absolute;
+      top: 1px;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+    }
+  }
+}

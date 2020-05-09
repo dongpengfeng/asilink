@@ -1,0 +1,56 @@
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.v-enter-to,
+.v-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 350ms ease;
+}
+
+.setting-container {
+  height: 100%;
+  background: #f8f8f8;
+  overflow: hidden;
+
+  .body {
+    display: flex;
+    height: 100%;
+    & > ul {
+      width: 192px;
+      margin: 0;
+      padding: 48px 0 0 57px;
+      list-style-type: none;
+
+      li {
+        font-size: 20px;
+        padding-bottom: 32px;
+
+        a {
+          color: #9d9d9d;
+          display: inline-block;
+          height: 20px;
+          border-left: 2px solid transparent;
+          padding-left: 6px;
+          transition: all 0.1 ease;
+        }
+
+        a.router-link-exact-active {
+          color: #282828;
+          border-color: #0076ff;
+        }
+      }
+    }
+
+    .content {
+      padding-top: 32px;
+    }
+  }
+}
