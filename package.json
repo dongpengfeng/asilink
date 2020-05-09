@@ -19,7 +19,7 @@
     "element-ui": "^2.4.11",
     "ethers": "^4.0.27",
     "extensionizer": "^1.0.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "js-cookie": "^2.2.0",
     "json-bigint": "^0.3.0",
     "lodash": "^4.17.4",
